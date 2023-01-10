@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="addPartWindow" prefHeight="465.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addPart">
+   <children>
+      <Label layoutX="47.0" layoutY="39.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inHouseBtn" layoutX="144.0" layoutY="39.0" mnemonicParsing="false" onAction="#selectInHouse" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="buttonTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outsourceBtn" layoutX="236.0" layoutY="39.0" mnemonicParsing="false" onAction="#selectOutsourced" text="Outsourced" toggleGroup="$buttonTG" />
+      <Label layoutX="38.0" layoutY="109.0" text="ID" />
+      <Label layoutX="36.0" layoutY="150.0" text="Name" />
+      <Label layoutX="36.0" layoutY="191.0" text="Inv" />
+      <Label layoutX="36.0" layoutY="232.0" text="Price/Cost" />
+      <Label layoutX="36.0" layoutY="274.0" text="Max" />
+      <Label fx:id="machineIDLabel" layoutX="36.0" layoutY="319.0" text="Machine ID" />
+      <Label layoutX="330.0" layoutY="274.0" text="Min" />
+      <Button fx:id="saveBtn" layoutX="330.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="384.0" layoutY="375.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+      <TextField fx:id="idText" layoutX="151.0" layoutY="109.0" />
+      <TextField fx:id="nameText" layoutX="151.0" layoutY="150.0" />
+      <TextField fx:id="invText" layoutX="151.0" layoutY="191.0" />
+      <TextField fx:id="priceText" layoutX="151.0" layoutY="232.0" />
+      <TextField fx:id="maxText" layoutX="151.0" layoutY="274.0" />
+      <TextField fx:id="machineIDText" layoutX="151.0" layoutY="319.0" />
+      <TextField fx:id="minText" layoutX="371.0" layoutY="274.0" />
+   </children>
+</AnchorPane>
